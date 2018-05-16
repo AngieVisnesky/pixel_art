@@ -4,6 +4,8 @@ function makeGrid(event) {
     const columns = parseInt(document.getElementById("inputWidth").value); //use parseInt to get a number instead of a string
     const rows = parseInt(document.getElementById("inputHeight").value);
 
+    table.innerHTML = ' ';
+
     //nested for loop to get number of columns and rows
     for (let row = 0; row < rows; row++) {
         const tableRow = document.createElement("tr");
